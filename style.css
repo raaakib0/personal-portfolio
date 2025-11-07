@@ -59,6 +59,49 @@ body {
   transform: rotate(15deg);
 }
 
+/* Hamburger button */
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 1.5em;
+  color: #ffb703;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 65px; /* just below navbar */
+    right: 0;
+    background: #0e0e3f;
+    flex-direction: column;
+    width: 200px;
+    padding: 15px 0;
+    display: none; /* hidden by default */
+    box-shadow: -2px 2px 10px rgba(0,0,0,0.3);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .dark-toggle {
+    margin: 10px auto;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
 /* === Hero === */
 .hero {
   display: flex;
