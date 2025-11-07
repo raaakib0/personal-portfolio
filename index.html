@@ -1,95 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Md. Rakibul Islam | Web Developer</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="images/favicon.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/b6846912bf.js" crossorigin="anonymous"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Md. Rakibul Islam | Web Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b6846912bf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="logo">Rakib</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <button class="dark-toggle" onclick="toggleDarkMode()">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </nav>
+    </header>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="logo">Rakib</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-      <button class="dark-toggle" onclick="toggleDarkMode()"><i class="fa-solid fa-moon"></i></button>
-    </nav>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero" id="about">
-    <div class="hero-text">
-      <h1>Hello, I'm <span>Md. Rakibul Islam</span></h1>
-      <h3>Full Stack Web Developer (React | Node | Laravel)</h3>
-      <p>Passionate about building interactive and scalable web applications that solve real-world problems.</p>
-      <div class="social-links">
-        <a href="https://linkedin.com/in/md-rakibul-islam-943a90212" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/raaakib0" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="mailto:raaakib0@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    <!-- HERO -->
+    <section class="hero" id="about">
+      <div class="hero-text">
+        <h1>Hello, I'm <span>Md. Rakibul Islam</span></h1>
+        <h3>Full Stack Web Developer (React | Node | Laravel)</h3>
+        <p>
+          Passionate about building interactive and scalable web applications
+          that solve real-world problems.
+        </p>
+        <div class="social-links">
+          <a
+            href="https://linkedin.com/in/md-rakibul-islam-943a90212"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/raaakib0" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="mailto:raaakib0@gmail.com"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
       </div>
-    </div>
-    <div class="hero-img">
-      <img src="images/my-bg.png" alt="Rakibul Islam" />
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="projects">
-    <h2>Featured Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Rent-A-Car Multi-Vendor Platform</h3>
-        <p>Developed with React.js, Node.js, and MongoDB Atlas for real-time booking and management.</p>
-        <a href="https://enjoy-trip.web.app" target="_blank" class="btn">Live Demo</a>
+      <div class="hero-img">
+        <img src="images/my-bg.png" alt="Rakibul Islam" />
       </div>
-      <div class="project-card">
-        <h3>E-Commerce Platform with POS</h3>
-        <p>Built with WordPress, PHP, and custom plugins for automated order management and payment processing.</p>
-        <a href="#" target="_blank" class="btn">Live Website</a>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Rent-A-Car Multi-Vendor Platform</h3>
+          <p>
+            Developed with React.js, Node.js, and MongoDB Atlas for real-time
+            booking and management.
+          </p>
+          <a href="https://enjoy-trip.web.app" target="_blank" class="btn"
+            >Live Demo</a
+          >
+        </div>
+        <div class="project-card">
+          <h3>E-Commerce Platform with POS</h3>
+          <p>
+            Built with WordPress, PHP, and custom plugins for automated order
+            management and payment processing.
+          </p>
+          <a href="#" target="_blank" class="btn">Live Website</a>
+        </div>
+        <div class="project-card">
+          <h3>Product Showcasing App</h3>
+          <p>
+            Developed in Laravel with CRUD operations and responsive UI using
+            Bootstrap.
+          </p>
+          <a href="#" target="_blank" class="btn">View Demo</a>
+        </div>
       </div>
-      <div class="project-card">
-        <h3>Product Showcasing App</h3>
-        <p>Developed in Laravel with CRUD operations and responsive UI using Bootstrap.</p>
-        <a href="#" target="_blank" class="btn">View Demo</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="skills">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li><i class="fa-brands fa-html5"></i> HTML5</li>
-      <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
-      <li><i class="fa-brands fa-js"></i> JavaScript</li>
-      <li><i class="fa-brands fa-react"></i> React.js</li>
-      <li><i class="fa-brands fa-node-js"></i> Node.js</li>
-      <li><i class="fa-brands fa-laravel"></i> Laravel</li>
-      <li><i class="fa-solid fa-database"></i> MongoDB / MySQL</li>
-      <li><i class="fa-brands fa-wordpress"></i> WordPress (Plugin Dev)</li>
-    </ul>
-  </section>
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><i class="fa-brands fa-html5"></i> HTML5</li>
+        <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+        <li><i class="fa-brands fa-js"></i> JavaScript</li>
+        <li><i class="fa-brands fa-react"></i> React.js</li>
+        <li><i class="fa-brands fa-node-js"></i> Node.js</li>
+        <li><i class="fa-brands fa-laravel"></i> Laravel</li>
+        <li><i class="fa-solid fa-database"></i> MongoDB / MySQL</li>
+        <li><i class="fa-brands fa-wordpress"></i> WordPress (Plugin Dev)</li>
+      </ul>
+    </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p><i class="fa-solid fa-envelope"></i> raaakib0@gmail.com</p>
-    <p><i class="fa-solid fa-phone"></i> +880 1976 571196</p>
-    <p><i class="fa-solid fa-location-dot"></i> Malibag, Dhaka, Bangladesh</p>
-  </section>
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <p><i class="fa-solid fa-envelope"></i> raaakib0@gmail.com</p>
+      <p><i class="fa-solid fa-phone"></i> +880 1976 571196</p>
+      <p><i class="fa-solid fa-location-dot"></i> Malibag, Dhaka, Bangladesh</p>
+    </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Md. Rakibul Islam | All Rights Reserved</p>
-  </footer>
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 Md. Rakibul Islam | All Rights Reserved</p>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

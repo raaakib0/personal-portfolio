@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Poppins', sans-serif;
   background: #f8f9fc;
@@ -22,20 +23,24 @@ body {
   position: sticky;
   top: 0;
 }
+
 .navbar .logo {
   font-weight: 700;
   font-size: 1.4em;
   color: orange;
 }
+
 .navbar nav a {
   color: white;
   text-decoration: none;
   margin: 0 10px;
   font-weight: 500;
 }
+
 .navbar nav a:hover {
   color: orange;
 }
+
 .dark-toggle {
   background: transparent;
   border: none;
@@ -52,34 +57,42 @@ body {
   flex-wrap: wrap;
   padding: 60px 5%;
 }
+
 .hero-text {
   flex: 1;
   min-width: 300px;
 }
+
 .hero-text h1 span {
   color: orange;
 }
+
 .hero-text h3 {
   margin: 10px 0;
   color: #0e0e3f;
 }
+
 .hero-text p {
   max-width: 500px;
 }
+
 .hero-img {
   flex: 1;
   text-align: center;
 }
+
 .hero-img img {
   width: 250px;
   border-radius: 50%;
   border: 5px solid orange;
 }
+
 .social-links a {
   margin: 10px;
   color: #0e0e3f;
   font-size: 1.4em;
 }
+
 .social-links a:hover {
   color: orange;
 }
@@ -90,6 +103,7 @@ body {
   background: white;
   text-align: center;
 }
+
 .project-grid {
   display: flex;
   flex-wrap: wrap;
@@ -97,17 +111,20 @@ body {
   gap: 25px;
   margin-top: 30px;
 }
+
 .project-card {
   background: #f0f8ff;
   padding: 20px;
   border-radius: 10px;
   width: 300px;
   text-align: left;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
 .project-card h3 {
   color: #0e0e3f;
 }
+
 .project-card .btn {
   display: inline-block;
   background: orange;
@@ -123,6 +140,7 @@ body {
   padding: 60px 5%;
   text-align: center;
 }
+
 .skills ul {
   display: flex;
   flex-wrap: wrap;
@@ -130,6 +148,7 @@ body {
   list-style: none;
   gap: 20px;
 }
+
 .skills li {
   background: #0e0e3f;
   color: white;
@@ -147,6 +166,7 @@ body {
   color: white;
   text-align: center;
 }
+
 .contact p i {
   color: orange;
   margin-right: 8px;
@@ -166,10 +186,12 @@ footer {
   background: #0e0e3f;
   color: #f0f0f0;
 }
+
 .dark-mode .navbar {
   background: #f8f9fc;
   color: #0e0e3f;
 }
+
 .dark-mode .hero h3,
 .dark-mode .project-card h3 {
   color: orange;
@@ -181,6 +203,7 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+
   .project-grid {
     flex-direction: column;
     align-items: center;
