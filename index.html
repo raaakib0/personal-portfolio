@@ -1,163 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rakibul Islam Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="/images/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Poppins&display=swap" rel="stylesheet">
-    <!-- <script src="https://kit.fontawesome.com/b6846912bf.jsanonymous" crossorigin=""></script> -->
-    <script src="https://kit.fontawesome.com/b6846912bf.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md. Rakibul Islam | Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/b6846912bf.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <div class="navbar nav-dark">
 
-        <div class="navtxt">
-            <h3>Rakib</h3>
-        </div>
-        <div class="toogle">
-            <label class="switch">
-                <input onclick="myFunction()" type="checkbox">
-                <span class="slider round"></span>
-            </label>
-        </div>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Rakib</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <button class="dark-toggle" onclick="toggleDarkMode()"><i class="fa-solid fa-moon"></i></button>
+    </nav>
+  </header>
 
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-text">
+      <h1>Hello, I'm <span>Md. Rakibul Islam</span></h1>
+      <h3>Full Stack Web Developer (React | Node | Laravel)</h3>
+      <p>Passionate about building interactive and scalable web applications that solve real-world problems.</p>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/md-rakibul-islam-943a90212" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/raaakib0" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:raaakib0@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
     </div>
-    <!-- Header -->
-    <section class="banner" id="welcome">
+    <div class="hero-img">
+      <img src="images/my-bg.png" alt="Rakibul Islam" />
+    </div>
+  </section>
 
-        <div class="half-width">
-            <h1>Wellcome</h1>
-            <h1> <span class="orng-color"> Md. Rakibul Islam </span>Portfolio!</h1>
-            <h1 class="orng-color">Frontend Developer</h1>
-            <h3 class="orng-color">Career Objective</h3>
-            <p>To associate with a firm that provides career development opportunities and to contribute to its progress
-                through my knowledge and skills.
-            </p>
-            <h3 class="orng-color">Contact</h3>
-            <p>
-                <i class="fa-solid fa-envelope" style=" color:purple;"></i> <a> raaakib0@gmail.com </a>
-                <br><i class="fa-solid fa-phone" style=" color:purple;"></i> <a> +8801976-571196</a>
-                <br><i class="fa-solid fa-location-dot" style=" color:purple;"></i><a> Kalia, Narail, Bangladesh.</a>
-            </p>
-            <br>
-            <!-- <a class="link-button" target="_blank" href="https://www.linkedin.com/in/md-rakibul-islam-943a90212">Hire Me</a> -->
-            <a class="link-button" target="_blank" href="https://www.linkedin.com/in/md-rakibul-islam-943a90212"><i
-                    class="fa-brands fa-linkedin-in"></i></a>
-            <a class="link-button " target="_blank" href="https://github.com/raaakib0"><i
-                    class="fa-brands fa-github"></i></a>
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Rent-A-Car Multi-Vendor Platform</h3>
+        <p>Developed with React.js, Node.js, and MongoDB Atlas for real-time booking and management.</p>
+        <a href="https://enjoy-trip.web.app" target="_blank" class="btn">Live Demo</a>
+      </div>
+      <div class="project-card">
+        <h3>E-Commerce Platform with POS</h3>
+        <p>Built with WordPress, PHP, and custom plugins for automated order management and payment processing.</p>
+        <a href="#" target="_blank" class="btn">Live Website</a>
+      </div>
+      <div class="project-card">
+        <h3>Product Showcasing App</h3>
+        <p>Developed in Laravel with CRUD operations and responsive UI using Bootstrap.</p>
+        <a href="#" target="_blank" class="btn">View Demo</a>
+      </div>
+    </div>
+  </section>
 
-        </div>
+  <!-- SKILLS -->
+  <section id="skills" class="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><i class="fa-brands fa-html5"></i> HTML5</li>
+      <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+      <li><i class="fa-brands fa-js"></i> JavaScript</li>
+      <li><i class="fa-brands fa-react"></i> React.js</li>
+      <li><i class="fa-brands fa-node-js"></i> Node.js</li>
+      <li><i class="fa-brands fa-laravel"></i> Laravel</li>
+      <li><i class="fa-solid fa-database"></i> MongoDB / MySQL</li>
+      <li><i class="fa-brands fa-wordpress"></i> WordPress (Plugin Dev)</li>
+    </ul>
+  </section>
 
-        <div class="half-width">
-            <img src="images/my-bg.png" alt="">
-        </div>
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p><i class="fa-solid fa-envelope"></i> raaakib0@gmail.com</p>
+    <p><i class="fa-solid fa-phone"></i> +880 1976 571196</p>
+    <p><i class="fa-solid fa-location-dot"></i> Malibag, Dhaka, Bangladesh</p>
+  </section>
 
-        <!-- middle -->
-    </section>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Md. Rakibul Islam | All Rights Reserved</p>
+  </footer>
 
-    <section class="dream">
-        </div>
-
-        <div class="half-width">
-            <img src="images/my-bg.png" alt="">
-        </div>
-
-        <div class="half-width">
-            <!-- <h1>Dream Big</h1>  -->
-            <h1> Personal <span class="orng-color"> Projects </span></h1>
-            <h3>Multi-Vendor Vehicle Rental Service</h3>
-            <p>
-                This application presents a data management system for a transportation technology, sharing modern
-                technology is also being used in rent-a-car and ride sharing services. In this project an app- based
-                platform <a style="font-weight: bold;" href="https://enjoy-trip.web.app">(Enjoy Trip)</a> is developed
-                and implemented for car renting and ride sharing. This application
-                presents a data management system which enables the administrator to keep track of all the customers’
-                information. This system increases customer retention and simplify vehicle and customers management in
-                an efficient way. The car rental management system has a very user friendly interface. Through this
-                platform users can rent any car for specific time easily. They can also pay the rent of car by Credit
-                Card. Drivers and vehicle owner can also add their profile in this platform. By using this system admin
-                can manage their rental, bookings, customer issues and vehicle issues etc. The transaction report of the
-                car rental system can be retrieved by the administrator, when it is required. Thus car rental
-                information can be captured very quickly and easily.
-                <a style="font-weight: bold;" class="orng-color" href="https://enjoy-trip.web.app">Live Website</a>
-
-            </p>
-            <a class="link-button" target="_blank" href="https://www.linkedin.com/in/md-rakibul-islam-943a90212"><i
-                    class="fa-brands fa-linkedin-in"></i></a>
-            <a class="link-button " target="_blank" href="https://github.com/raaakib0"><i
-                    class="fa-brands fa-github"></i></a>
-
-
-
-    </section>
-
-    <!-- <h1 id="h1exp">Experiences</h1> -->
-    <section class="third">
-
-        <div id="left" class="experience">
-            <h1>Skills</h1>
-            <div class="skill">
-                <div>
-                    <h3><i class="fa-brands fa-html5" style="font-size:50px;"></i> HTML</h3>
-                    <h3><i class="fa-brands fa-css3-alt" style="font-size:50px;"></i> CSS</h3>
-                    <h3><i class="fa-brands fa-js" style="font-size:50px;"></i> JavaScript</h3>
-                    <!-- <h3><i class="fa-brands fa-github" style="font-size:50px;"></i> GitHub</h3> -->
-                    <br>
-                </div>
-                
-                <div>
-                    <h3><i class="fa-brands fa-react" style="font-size:50px;"></i> ReactJS</h3>
-                    <h3><i class="fa-brands fa-bootstrap" style="font-size:50px;"></i> Bootstrap</h3>
-                    <h3><i class="fa-solid fa-database" style="font-size:50px;"></i> MongoDB</h3>
-                    <!-- <h3><i class="fa-brands fa-figma" style="font-size:50px;"></i> Figma</h3> -->
-                </div>
-            </div>
-
-        </div>
-
-        <div id="right" class="experience">
-            <div class="education">
-            <h1>Education</h1>
-            <h4>
-                2023 – 2024
-                <br> <span class="orng-color"> M.Sc in CSE (CGPA - 3.60)</span>
-                <br>Royal University of Dhaka
-                <br>
-                <br>2019 – 2023
-                <br> <span class="orng-color">B.Sc in CSE (CGPA - 3.42)</span>
-                <br>Sonargaon University
-                <br>
-                <!-- <br>2013 – 2017
-                <br> <span class="orng-color">Diploma in Agriculture (CGPA - 3.30)</span>
-                <br>Agriculture Training Institute, Board: BTEB
-                <br>
-                <br>2011 – 2012
-                <br> <span class="orng-color">SSC - Science (GPA - 4.94)</span>
-                <br>Board: Jessore, Passing year-2013. -->
-            </h4>
-        </div>
-        </div>
-
-    </section>
-
-    <footer class="footer-dark">
-
-            <!-- <br><i class="fa-regular fa-envelope" style="font-size:60px; color:lightblue;"></i>  <a> raaakib0@gmail.com </a> -->
-            <br><i class="fa-solid fa-envelope" style=" color:lightblue;"></i> <a> raaakib0@gmail.com </a>
-            <br><i class="fa-solid fa-phone" style=" color:lightblue;"></i> <a> +8801976-571196</a>
-            <br><i class="fa-solid fa-location-dot" style=" color:lightblue;"></i><a> Kalia, Narail, Bangladesh.</a>
-
-            <p id="right-txt">©rakib2024</p>
-       
-    </footer>
+  <script src="script.js"></script>
 </body>
-
 </html>
