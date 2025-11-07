@@ -1,3 +1,4 @@
+/* === Global Reset === */
 * {
   margin: 0;
   padding: 0;
@@ -9,10 +10,10 @@ body {
   background: #f8f9fc;
   color: #333;
   line-height: 1.6;
-  transition: background 0.3s, color 0.3s;
+  transition: background 0.4s ease, color 0.4s ease;
 }
 
-/* NAVBAR */
+/* === Navbar === */
 .navbar {
   background: #0e0e3f;
   color: white;
@@ -22,40 +23,50 @@ body {
   padding: 15px 5%;
   position: sticky;
   top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .navbar .logo {
   font-weight: 700;
   font-size: 1.4em;
-  color: orange;
+  color: #ffb703;
+  letter-spacing: 1px;
 }
 
 .navbar nav a {
   color: white;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 12px;
   font-weight: 500;
+  transition: color 0.3s;
 }
 
 .navbar nav a:hover {
-  color: orange;
+  color: #ffb703;
 }
 
 .dark-toggle {
   background: transparent;
   border: none;
-  color: orange;
-  font-size: 1.2em;
+  color: #ffb703;
+  font-size: 1.3em;
   cursor: pointer;
+  transition: transform 0.3s;
 }
 
-/* HERO */
+.dark-toggle:hover {
+  transform: rotate(15deg);
+}
+
+/* === Hero === */
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 60px 5%;
+  padding: 80px 5%;
+  gap: 40px;
 }
 
 .hero-text {
@@ -63,17 +74,25 @@ body {
   min-width: 300px;
 }
 
+.hero-text h1 {
+  font-size: 2.4em;
+  margin-bottom: 10px;
+}
+
 .hero-text h1 span {
-  color: orange;
+  color: #ffb703;
 }
 
 .hero-text h3 {
   margin: 10px 0;
   color: #0e0e3f;
+  font-weight: 500;
 }
 
 .hero-text p {
   max-width: 500px;
+  margin-top: 10px;
+  font-size: 1.05em;
 }
 
 .hero-img {
@@ -82,63 +101,88 @@ body {
 }
 
 .hero-img img {
-  width: 250px;
+  width: 260px;
   border-radius: 50%;
-  border: 5px solid orange;
+  border: 5px solid #ffb703;
+  box-shadow: 0 0 15px rgba(255,183,3,0.4);
 }
 
 .social-links a {
-  margin: 10px;
+  margin: 12px;
   color: #0e0e3f;
-  font-size: 1.4em;
+  font-size: 1.5em;
+  transition: color 0.3s;
 }
 
 .social-links a:hover {
-  color: orange;
+  color: #ffb703;
 }
 
-/* PROJECTS */
+/* === Projects === */
 .projects {
-  padding: 60px 5%;
-  background: white;
+  padding: 80px 5%;
+  background: #fff;
   text-align: center;
+}
+
+.projects h2 {
+  color: #0e0e3f;
+  margin-bottom: 25px;
 }
 
 .project-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
+  gap: 30px;
   margin-top: 30px;
 }
 
 .project-card {
   background: #f0f8ff;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 25px;
+  border-radius: 12px;
   width: 300px;
   text-align: left;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
 
 .project-card h3 {
   color: #0e0e3f;
 }
 
-.project-card .btn {
-  display: inline-block;
-  background: orange;
-  color: white;
-  padding: 8px 15px;
-  margin-top: 10px;
-  border-radius: 5px;
-  text-decoration: none;
+.project-card p {
+  font-size: 0.95em;
+  margin: 10px 0;
 }
 
-/* SKILLS */
+.project-card .btn {
+  display: inline-block;
+  background: #ffb703;
+  color: #fff;
+  padding: 8px 15px;
+  margin-top: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.project-card .btn:hover {
+  background: #f48c06;
+}
+
+/* === Skills === */
 .skills {
-  padding: 60px 5%;
+  padding: 80px 5%;
   text-align: center;
+  background: #f8f9fc;
 }
 
 .skills ul {
@@ -152,58 +196,127 @@ body {
 .skills li {
   background: #0e0e3f;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 22px;
   border-radius: 25px;
   display: flex;
   align-items: center;
   gap: 10px;
+  font-size: 0.95em;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
 
-/* CONTACT */
+/* === Contact === */
 .contact {
-  padding: 60px 5%;
+  padding: 80px 5%;
   background: #0e0e3f;
   color: white;
   text-align: center;
 }
 
-.contact p i {
-  color: orange;
+.contact h2 {
+  color: #ffb703;
+}
+
+.contact p {
+  margin-top: 8px;
+  font-size: 1em;
+}
+
+.contact i {
+  color: #ffb703;
   margin-right: 8px;
 }
 
-/* FOOTER */
+/* === Footer === */
 footer {
   background: #111;
   color: white;
   text-align: center;
   padding: 15px;
   font-size: 0.9em;
+  letter-spacing: 0.3px;
 }
 
-/* DARK MODE */
+/* === Dark Mode (Enhanced) === */
 .dark-mode {
-  background: #0e0e3f;
-  color: #f0f0f0;
+  background: #0b0f19;
+  color: #e3e3e3;
 }
 
+/* Navbar in Dark Mode */
 .dark-mode .navbar {
-  background: #f8f9fc;
-  color: #0e0e3f;
+  background: #101626;
+  color: #e3e3e3;
+  box-shadow: 0 2px 5px rgba(255,183,3,0.15);
+}
+.dark-mode .navbar nav a {
+  color: #e3e3e3;
+}
+.dark-mode .navbar nav a:hover {
+  color: #ffb703;
+}
+.dark-mode .dark-toggle {
+  color: #ffb703;
 }
 
-.dark-mode .hero h3,
+/* Hero Dark Mode */
+.dark-mode .hero-text h3 {
+  color: #ffb703;
+}
+.dark-mode .social-links a {
+  color: #e3e3e3;
+}
+.dark-mode .social-links a:hover {
+  color: #ffb703;
+}
+
+/* Projects Dark Mode */
+.dark-mode .projects {
+  background: #12192f;
+}
+.dark-mode .project-card {
+  background: #1a2239;
+  color: #e3e3e3;
+  box-shadow: 0 4px 12px rgba(255,183,3,0.08);
+}
 .dark-mode .project-card h3 {
-  color: orange;
+  color: #ffb703;
+}
+.dark-mode .project-card .btn {
+  background: #ffb703;
+  color: #101626;
+}
+.dark-mode .project-card .btn:hover {
+  background: #f48c06;
 }
 
-/* RESPONSIVE */
+/* Skills Dark Mode */
+.dark-mode .skills {
+  background: #0f1424;
+}
+.dark-mode .skills li {
+  background: #1c2541;
+  color: #ffb703;
+}
+
+/* Contact Dark Mode */
+.dark-mode .contact {
+  background: #101626;
+  color: #e3e3e3;
+}
+
+/* Footer Dark Mode */
+.dark-mode footer {
+  background: #0b0f19;
+  color: #aaa;
+}
+
+/* === Responsive === */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
     text-align: center;
   }
-
   .project-grid {
     flex-direction: column;
     align-items: center;
